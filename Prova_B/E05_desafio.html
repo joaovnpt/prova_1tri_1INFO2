@@ -8,11 +8,19 @@
     */
 
     //ENTRADA
-
+    const kml = prompt("Quantos quilômetros a motocicleta faz com um litro?")
+    const quilometragem = prompt("Quantos km você já pecorreu?")
 
     //PROCESSAMENTO
+    const litrostotal = Number(kml) * Number(quilometragem)
+    let revisao = Number(quilometragem) / 2000
+    let precorevisao = Number(revisao) * 200
 
+    if (revisao < 1) {
+        precorevisao = 0
+    }
 
     //SAÍDA
+    alert("A quantidade de litros de combustível consumido foi de " + litrostotal.toFixed(0).replace(".",",") + "l" + " e o preço da revisão ficou em " + precorevisao.toFixed(0).replace(".",","))
 
 </script>

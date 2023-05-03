@@ -7,11 +7,13 @@
     */
 
     //ENTRADA
-
+    const irmao1 = prompt("Quantos ml de água o irmão x toma por dia?").replace(",",".")
+    const irmao2 = prompt("Quantos ml de água o irmão y toma por dia?").replace(",",".")
+    const irmao3 = prompt("Quantos ml de água o irmão z toma por dia?").replace(",",".")
 
     //PROCESSAMENTO
-
+    const media = (Number(irmao1) + Number(irmao2) + Number(irmao3)) / 3
 
     //SAÍDA
-
+    alert("A média de consumo de água diário dos três irmãos é de " + media.toFixed(0).replace(".",",") + "ml")
 </script>

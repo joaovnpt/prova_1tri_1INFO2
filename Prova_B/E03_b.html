@@ -7,11 +7,14 @@
     */
 
     //ENTRADA
-
+    const precoagua = prompt("Informe o preço da garrafa de água").replace(",",".")
 
     //PROCESSAMENTO
-
+    const aguadia = 2100 / 1000
+    const agua2anos = Number(aguadia) * 730
+    const garrafas = (2100 * 730) / 600
+    const precofinal = Number(precoagua) * Number(garrafas)
 
     //SAÍDA
-
+    alert("Em 2 anos, esta pessoa terá bebido " + agua2anos.toFixed(0).replace(".",",") + "l de água" + " e terá gastado " + "R$" + precofinal.toFixed(2).replace(".",",") + " com água.")
 </script>

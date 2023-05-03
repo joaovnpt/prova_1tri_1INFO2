@@ -13,5 +13,12 @@
 
 
     //SAÍDA
-
+    const peso1 = prompt("Qual foi o peso da pirmeira atividade? Digite em números inteiros de 0 a 10.")
+    const peso2 = prompt("Qual foi o peso da segunda atividade? Digite em números inteiros de 0 a 10.")
+    const nota1 = prompt("Informe sua nota na primeira atividade.").replace(",",".")
+    const nota2 = prompt("Informe sua nota na segunda atividade.").replace(",",".")
+    const notafinal1 = Number(nota1) * (Number(peso1))
+    const notafinal2 = Number(nota2) * (Number(peso2))
+    const finalfinal = (Number(notafinal1) + Number(notafinal2)) / (Number(peso1) + Number(peso2))
+    alert("Sua nota final é de " + finalfinal.toFixed(2).replace(".",","))
 </script>
